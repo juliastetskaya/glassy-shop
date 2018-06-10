@@ -16,9 +16,15 @@
           <li><a href="#">О Компании</a></li>
         </ul>
         <ul class="user-nav">
-          <li class="search hidden-text">Поиск</li>
-          <li class="login-link">Вход</li>
-          <li class="basket">Пусто</li>
+          <li>
+            <a class="header-search hidden-text" href="search.html">Поиск</a>
+          </li>
+          <li>
+            <a class="header-login-link" href="login.html">Вход</a>
+          </li>
+          <li>
+            <a class="header-basket" href="basket.html">Пусто</a>
+          </li>
         </ul>
       </nav>
       <p class="main-header-timetable">
@@ -62,8 +68,6 @@
           <li class="hits-item">
             <a href="#">
               <h3>Сливочное с апельсиновым<br>джемом и цитрусовой стружкой</h3>
-            </a>
-            <a href="#">
               <img src="img/product-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
             </a>
             <p class="hits-item-price">
@@ -74,8 +78,6 @@
           <li>
             <a href="#">
               <h3>Сливочно-кофейное с кусочками<br>шоколада</h3>
-            </a>
-            <a href="#">
               <img src="img/product-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
             </a>
             <p class="hits-item-price">
@@ -86,8 +88,6 @@
           <li>
             <a href="#">
               <h3>Сливочно-клубничное с<br>присыпкой из белого шоколада</h3>
-            </a>
-            <a href="#">
               <img src="img/product-3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
             </a>
             <p class="hits-item-price">
@@ -98,8 +98,6 @@
           <li>
             <a href="#">
               <h3>Сливочное крем-брюле с<br>карамельной подливкой</h3>
-            </a>
-            <a href="#">
               <img src="img/product-4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
             </a>
             <p class="hits-item-price">
@@ -140,12 +138,16 @@
       <section class="subscribe">
         <h2 class="visually-hidden">Подписаться на рассылку</h2>
         <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-        <!-- Здесь будет форма -->
+        <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
+          <label class="visually-hidden" for="email-field">Электронная почта</label>
+          <input type="email" id="email-field" name="email" placeholder="Электронная почта">
+          <button class="button" type="submit">Отправить</button>
+        </form>
       </section>
 
       <section class="map">
         <h2 class="visually-hidden">Адрес и телефон магазина</h2>
-        <img src="img/map.jpg" width="1200" height="430" alt="">
+        <img src="img/map.jpg" width="1200" height="430" alt="Карта расположения главного офиса">
         <p class="map-address">Адрес главного офиса<br>и офлайн-магазина:<br>
         <b>ул. Большая Конюшенная<br>19/8, Санкт-Петербург</b></p>
         <p class="map-phone">Для заказа по телефону:<br>
@@ -194,20 +196,49 @@
 
     <section class="popup-login">
       <h2 class="visually-hidden">Форма авторизации</h2>
-      <!-- Здесь будет форма -->
-      <a href="#">Забыли пароль?</a><br>
-      <a href="#">Новая регистрация</a><br>
+      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="login-email">
+          <label class="visually-hidden" for="login-email-field">Электронная почта</label>
+          <input type="email" id="login-email-field" name="login-email" placeholder="Электронная почта">
+        </p>
+        <p class="login-password">
+          <label class="visually-hidden" for="login-password-field">Пароль</label>
+          <input type="password" id="login-password-field" name="login-password" placeholder="Пароль">
+        </p>
+        <button class="button" type="submit">Войти</button>
+        <p class="login-registration">
+          <a href="#">Забыли пароль?</a><br>
+          <a href="#">Новая регистрация</a>
+        </p>
+      </form>
     </section>
 
     <section class="popup-search">
       <h2 class="visually-hidden">Форма поиска</h2>
-      <!-- Здесь будет форма -->
+      <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+        <label class="visually-hidden" for="search-field">Поле для поиска</label>
+        <input type="search" name="search" id="search-field" placeholder="Что ищем?">
+      </form>
     </section>
 
     <section class="popup-feedback">
       <h2 class="visually-hidden">Форма обратной связи</h2>
       <h3>Мы обязательно вам ответим!</h3>
-      <!-- Здесь будет форма -->
+      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="feedback-name">
+          <label class="visually-hidden" for="feedback-name-field">Имя</label>
+          <input type="text" name="feedback-name" id="feedback-name-field" placeholder="Как вас зовут?">
+        </p>
+        <p class="feedback-email">
+          <label class="visually-hidden" for="feedback-email-field">Электронная почта</label>
+          <input type="email" name="feedback-email" id="feedback-email-field" placeholder="Ваша почта для ответа?">
+        </p>
+        <p class="feedback-text">
+          <label for="feedback-text-field">Комментарий</label>
+          <textarea name="feedback-text" id="feedback-text-field" cols="45" rows="8" placeholder="Напишите что-нибудь..."></textarea>
+        </p>
+        <button class="button" type="submit">Отправить</button>
+      </form>
     </section>
   </body>
 </html>
