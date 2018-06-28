@@ -9,14 +9,26 @@
   </head>
   <body>
     <div class="inner-page">
-      <header class="main-header">
+      <header class="container">
         <div class="main-header-wrapper">
           <a class="main-header-logo" href="index.html">
             <img src="img/logo.svg" width="154" height="64" alt="Логотип интернет-магазина «Глейси»">
           </a>
           <nav class="main-nav">
             <ul class="site-nav">
-              <li class="site-nav-current"><a><span class="underline">Каталог</span></a></li>
+              <li class="site-nav-current">
+                <a><span class="underline">Каталог</span></a>
+                <section class="popup-menu">
+                  <h2 class="visually-hidden">Меню «Каталог»</h2>
+                  <ul class="popup-menu-list">
+                    <li><a href="#"><b>Новинки</b></a></li>
+                    <li class="active"><a>Сливочное</a></li>
+                    <li><a href="#">Щербеты</a></li>
+                    <li><a href="#">Фруктовый лед</a></li>
+                    <li><a href="#">Мелорин</a></li>
+                  </ul>
+                </section>
+              </li>
               <li><a href="#"><span class="underline">Доставка и оплата</span></a></li>
               <li><a href="#"><span class="underline">О Компании</span></a></li>
             </ul>
@@ -62,22 +74,26 @@
                   <h2 class="visually-hidden">Товары в корзине</h2>
                   <table class="basket-products-list">
                     <tr>
-                      <td class="delete-product">X</td>
+                      <td class="delete-product">Удалить</td>
                       <td><img src="img/basket-product-1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
-                      <td>Пломбир с апельсиновым джемом</td>
-                      <td>1,5 кг х 200 руб.</td>
+                      <td class="basket-product-name">Пломбир с апельсиновым джемом</td>
+                      <td class="basket-product-cost">1,5 кг х <span class="basket-price">200 руб.</span></td>
                       <td>300 руб.</td>
                     </tr>
                     <tr>
-                      <td class="delete-product">X</td>
+                      <td class="delete-product">Удалить</td>
                       <td><img src="img/basket-product-2.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
-                      <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-                      <td>1,5 кг х 300 руб.</td>
+                      <td class="basket-product-name"><span class="basket-name">Клубничный пломбир с присыпкой из белого шоколада</span></td>
+                      <td class="basket-product-cost">1,5 кг х <span class="basket-price">300 руб.</span></td>
                       <td>450 руб.</td>
                     </tr>
                   </table>
-                  <b>Итого: 750 руб.</b>
-                  <a class="button" href="#">Оформить заказ</a>
+                  <span class="basket-line"></span>
+                  <div class="basket-wrapper">
+                    <b>Итого: 750 руб.</b>
+                    <a class="button" href="#">Оформить заказ</a>
+                  </div>
+                  
                 </section>
               </li>
             </ul>
@@ -86,7 +102,7 @@
         <div class="header-wrapper">
           <p class="main-header-timetable">
             <span class="mode">С 10 до 20, ежедневно</span><br>
-            <span class="phone">8 812 450-25-25</span>
+            <a class="phone">8 812 450-25-25</a>
           </p>
           <ul class="breadcrumbs">
             <li><a href="index.html"><span class="underline">Главная</span></a></li>
@@ -130,28 +146,28 @@
                 <ul class="filter-fat-content-list">
                   <li class="filter-option">
                     <label>
-                      <input class="visually-hidden filter-input filter-input-radio" type="radio" value="0%" name="fat-content">
+                      <input class="visually-hidden" type="radio" value="0%" name="fat-content">
                       <span class="radio-indicator"></span>
                       0%
                     </label>
                   </li>
                   <li class="filter-option">
                     <label>
-                      <input class="visually-hidden filter-input filter-input-radio" type="radio" value="to-10%" name="fat-content" checked disabled>
+                      <input class="visually-hidden" type="radio" value="to-10%" name="fat-content" checked>
                       <span class="radio-indicator"></span>
                       до 10%
                     </label>
                   </li>
                   <li class="filter-option">
                     <label>
-                      <input class="visually-hidden filter-input filter-input-radio" type="radio" value="to-30%" name="fat-content">
+                      <input class="visually-hidden" type="radio" value="to-30%" name="fat-content">
                       <span class="radio-indicator"></span>
                       до 30%
                     </label>
                   </li>
                   <li class="filter-option">
                     <label>
-                      <input class="visually-hidden filter-input filter-input-radio" type="radio" value="above-30%" name="fat-content">
+                      <input class="visually-hidden" type="radio" value="above-30%" name="fat-content">
                       <span class="radio-indicator"></span>
                       выше 30%
                     </label>
@@ -165,35 +181,35 @@
                 <ul class="filter-fillers-list">
                   <li class="filter-option">
                     <label>
-                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="chocolate" checked>
+                      <input class="visually-hidden" type="checkbox" name="fillers" value="chocolate" checked>
                       <span class="checkbox-indicator"></span>
                       шоколадные
                     </label>
                   </li>
                   <li class="filter-option">
                     <label>
-                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="sugar-powders" checked>
+                      <input class="visually-hidden" type="checkbox" name="fillers" value="sugar-powders" checked>
                       <span class="checkbox-indicator"></span>
                       сахарные присыпки
                     </label>
                   </li>
                   <li class="filter-option">
                     <label>
-                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="fruits">
+                      <input class="visually-hidden" type="checkbox" name="fillers" value="fruits">
                       <span class="checkbox-indicator"></span>
                       фрукты
                     </label>
                   </li>
                   <li class="filter-option">
                     <label>
-                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="syrups">
+                      <input class="visually-hidden" type="checkbox" name="fillers" value="syrups">
                       <span class="checkbox-indicator"></span>
                       сиропы
                     </label>
                   </li>
                   <li class="filter-option">
                     <label>
-                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="jams">
+                      <input class="visually-hidden" type="checkbox" name="fillers" value="jams">
                       <span class="checkbox-indicator"></span>
                       джемы
                     </label>
@@ -218,6 +234,9 @@
                   </p>
                 </div>
               </a>
+              <div class="button-wrapper">
+                <a class="button">Быстрый просмотр</a>
+              </div>
             </li>
             <li class="catalog-list-item">
               <a href="#">
@@ -229,6 +248,9 @@
                   </p>
                 </div>
               </a>
+              <div class="button-wrapper">
+                <a class="button">Быстрый просмотр</a>
+              </div>
             </li>
             <li class="catalog-list-item">
               <a href="#">
@@ -240,6 +262,9 @@
                   </p>
                 </div>
               </a>
+              <div class="button-wrapper">
+                <a class="button">Быстрый просмотр</a>
+              </div>
             </li>
             <li class="catalog-list-item">
               <a href="#">
@@ -251,6 +276,9 @@
                   </p>
                 </div>
               </a>
+              <div class="button-wrapper">
+                <a class="button">Быстрый просмотр</a>
+              </div>
             </li>
             <li class="catalog-list-item">
               <a href="#">
@@ -262,6 +290,9 @@
                   </p>
                 </div>
               </a>
+              <div class="button-wrapper">
+                <a class="button">Быстрый просмотр</a>
+              </div>
             </li>
             <li class="catalog-list-item">
               <a href="#">
@@ -273,6 +304,9 @@
                   </p>
                 </div>
               </a>
+              <div class="button-wrapper">
+                <a class="button">Быстрый просмотр</a>
+              </div>
             </li>
             <li class="catalog-list-item">
               <a href="#">
@@ -284,6 +318,9 @@
                   </p>
                 </div>
               </a>
+              <div class="button-wrapper">
+                <a class="button">Быстрый просмотр</a>
+              </div>
             </li>
             <li class="catalog-list-item">
               <a href="#">
@@ -295,6 +332,9 @@
                   </p>
                 </div>
               </a>
+              <div class="button-wrapper">
+                <a class="button">Быстрый просмотр</a>
+              </div>
             </li>
             <li class="catalog-list-item">
               <a href="#">
@@ -306,6 +346,9 @@
                   </p>
                 </div>
               </a>
+              <div class="button-wrapper">
+                <a class="button">Быстрый просмотр</a>
+              </div>
             </li>
             <li class="catalog-list-item">
               <a href="#">
@@ -317,6 +360,9 @@
                   </p>
                 </div>
               </a>
+              <div class="button-wrapper">
+                <a class="button">Быстрый просмотр</a>
+              </div>
             </li>
             <li class="catalog-list-item">
               <a href="#">
@@ -328,6 +374,9 @@
                   </p>
                 </div>
               </a>
+              <div class="button-wrapper">
+                <a class="button">Быстрый просмотр</a>
+              </div>
             </li>
             <li class="catalog-list-item">
               <a href="#">
@@ -339,6 +388,9 @@
                   </p>
                 </div>
               </a>
+              <div class="button-wrapper">
+                <a class="button">Быстрый просмотр</a>
+              </div>
             </li>
           </ul>
         </section>
@@ -358,7 +410,7 @@
         </div>
       </main>
 
-      <footer class="main-footer">
+      <footer class="container main-footer">
         <div class="footer-social">
           <ul class="social-btn">
             <li class="social social-btn-tw"><a href="#"><span class="visually-hidden">Twitter</span> </a></li>
@@ -370,7 +422,7 @@
 
         <div class="footer-nav">
           <ul class="footer-nav-list">
-            <li><a href="#"><b><span class="heart underline">Для поставщиков</span></b></a></li>
+            <li><a href="#"><strong><span class="heart underline">Для поставщиков</span></strong></a></li>
             <li><a href="#"><span class="underline">Наши документы</span></a></li>
             <li><a href="#"><span class="underline">О производстве</span></a></li>
             <li><a href="#"><span class="underline">Экологические стандарты</span></a></li>
