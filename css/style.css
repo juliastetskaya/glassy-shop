@@ -405,6 +405,13 @@ input[type="radio"].visually-hidden {
   color: #999999;
 }
 
+.search-form input::-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #999999;
+}
+
 .search-form input:-ms-input-placeholder {
   font-weight: 400;
   font-size: 14px;
@@ -413,6 +420,10 @@ input[type="radio"].visually-hidden {
 }
 
 .search-form input:focus::placeholder {
+  color: transparent;
+}
+
+.search-form input:focus::-ms-input-placeholder {
   color: transparent;
 }
 
@@ -472,11 +483,19 @@ input[type="radio"].visually-hidden {
   font-size: 14px;
 }
 
+.login-form input::-ms-input-placeholder {
+  font-size: 14px;
+}
+
 .login-form input:-ms-input-placeholder {
   font-size: 14px;
 }
 
 .login-form input:focus::placeholder {
+  color: transparent;
+}
+
+.login-form input:focus::-ms-input-placeholder {
   color: transparent;
 }
 
@@ -1099,6 +1118,11 @@ input::placeholder {
   color: #999999;
 }
 
+input::-ms-input-placeholder {
+  font-weight: 400;
+  color: #999999;
+}
+
 input:-ms-input-placeholder {
   font-weight: 400;
   color: #999999;
@@ -1116,6 +1140,10 @@ input:-ms-input-placeholder {
 }
 
 .subscribe-form input:focus::placeholder {
+  color: transparent;
+}
+
+.subscribe-form input:focus::-ms-input-placeholder {
   color: transparent;
 }
 
@@ -1472,6 +1500,13 @@ input:-ms-input-placeholder {
   color: #999999;
 }
 
+.feedback-form input::-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #999999;
+}
+
 .feedback-form input:-ms-input-placeholder {
   font-weight: 400;
   font-size: 16px;
@@ -1480,6 +1515,10 @@ input:-ms-input-placeholder {
 }
 
 .feedback-form input:focus::placeholder {
+  color: transparent;
+}
+
+.feedback-form input:focus::-ms-input-placeholder {
   color: transparent;
 }
 
@@ -1520,6 +1559,13 @@ input:-ms-input-placeholder {
   color: #999999;
 }
 
+.feedback-form textarea::-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #999999;
+}
+
 .feedback-form textarea:-ms-input-placeholder {
   font-weight: 400;
   font-size: 16px;
@@ -1528,6 +1574,10 @@ input:-ms-input-placeholder {
 }
 
 .feedback-form textarea:focus::placeholder {
+  color: transparent;
+}
+
+.feedback-form textarea:focus::-ms-input-placeholder {
   color: transparent;
 }
 
@@ -2255,7 +2305,7 @@ input[type="checkbox"]:checked:hover:disabled + .checkbox-indicator::after {
 
 .basket-wrapper b {
   margin-bottom: 14px;
-  margin-left: auto;
+  align-self: flex-end;
 
   font-size: 15px;
   line-height: 18px;
@@ -2264,7 +2314,7 @@ input[type="checkbox"]:checked:hover:disabled + .checkbox-indicator::after {
 
 .basket-wrapper .button {
   margin-bottom: 5px;
-  margin-left: auto;
+  align-self: flex-end;
   padding: 10px 15px;
 }
 
