@@ -281,16 +281,23 @@ input[type="radio"].visually-hidden {
 }
 
 .user-nav > li:hover .popup-search,
-.user-nav-item:focus-within .popup-search,
 .user-nav > li:hover .popup-login,
+.user-nav > li:hover .popup-basket-empty {
+  display: block;
+
+  -webkit-animation: main-animation 0.6s;
+          animation: main-animation 0.6s;
+}
+
+.user-nav-item:focus-within .popup-search,
 .user-nav-item:focus-within .popup-login,
-.user-nav > li:hover .popup-basket-empty,
 .user-nav-item:focus-within .popup-basket-empty {
   display: block;
 
   -webkit-animation: main-animation 0.6s;
           animation: main-animation 0.6s;
 }
+
 
 .search,
 .login,
