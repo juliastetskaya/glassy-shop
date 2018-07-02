@@ -182,8 +182,8 @@ input[type="radio"].visually-hidden {
 .site-nav-item:focus-within .popup-menu {
   display: block;
 
-  /* -webkit-animation: main-animation 0.6s;
-          animation: main-animation 0.6s; */
+  -webkit-animation: main-animation 0.6s;
+          animation: main-animation 0.6s;
 }
 
 .underline {
@@ -255,6 +255,7 @@ input[type="radio"].visually-hidden {
 
   background-color: #f8f7f4;
 
+  -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
 }
 
@@ -267,6 +268,7 @@ input[type="radio"].visually-hidden {
 .header-login-link:focus::before {
   background-image: url("../img/entrance.svg");
 
+  -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
 }
 
@@ -274,14 +276,15 @@ input[type="radio"].visually-hidden {
 .header-basket:focus::before {
   background-image: url("../img/basket-black.svg");
 
+  -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
 }
 
-.user-nav-item:hover .popup-search,
+.user-nav > li:hover .popup-search,
 .user-nav-item:focus-within .popup-search,
-.user-nav-item:hover .popup-login,
+.user-nav > li:hover .popup-login,
 .user-nav-item:focus-within .popup-login,
-.user-nav-item:hover .popup-basket-empty,
+.user-nav > li:hover .popup-basket-empty,
 .user-nav-item:focus-within .popup-basket-empty {
   display: block;
 
