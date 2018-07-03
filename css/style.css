@@ -1,13 +1,13 @@
 html {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 body {
@@ -74,7 +74,9 @@ input[type="radio"].visually-hidden {
   border: 0;
 
   clip: rect(0 0 0 0);
-  clip-path: inset(100%);
+          clip-path: inset(100%);
+
+  -webkit-clip-path: inset(100%);
 }
 
 .button {
@@ -262,7 +264,7 @@ input[type="radio"].visually-hidden {
   background-color: #f8f7f4;
 
   -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
+          transition-duration: 0.7s;
 }
 
 .header-search:hover path,
@@ -275,7 +277,7 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/entrance.svg");
 
   -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
+          transition-duration: 0.7s;
 }
 
 .header-basket:hover::before,
@@ -283,7 +285,7 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/basket-black.svg");
 
   -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
+          transition-duration: 0.7s;
 }
 
 .user-nav-item:hover .popup-search,
@@ -1656,6 +1658,10 @@ input:-ms-input-placeholder {
   width: 261px;
 }
 
+.inner-page-main {
+  flex-direction: column;
+}
+
 .header-wrapper {
   flex-direction: row-reverse;
   justify-content: space-between;
@@ -2304,8 +2310,8 @@ input[type="checkbox"]:checked:hover:disabled + .checkbox-indicator::after {
 }
 
 .basket-wrapper b {
-  margin-bottom: 14px;
   align-self: flex-end;
+  margin-bottom: 14px;
 
   font-size: 15px;
   line-height: 18px;
@@ -2313,8 +2319,8 @@ input[type="checkbox"]:checked:hover:disabled + .checkbox-indicator::after {
 }
 
 .basket-wrapper .button {
-  margin-bottom: 5px;
   align-self: flex-end;
+  margin-bottom: 5px;
   padding: 10px 15px;
 }
 
