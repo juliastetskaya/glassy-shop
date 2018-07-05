@@ -15,16 +15,16 @@
             <img src="img/logo.svg" width="154" height="64" alt="Логотип интернет-магазина «Глейси»">
           </a>
           <nav class="main-nav flex">
-            <ul class="site-nav flex">
+            <ul class="site-nav flex list-style">
               <li class="site-nav-item site-nav-current">
                 <a tabindex="0">
                   <span class="underline">Каталог</span>
                 </a>
                 <section class="popup-menu">
                   <h2 class="visually-hidden">Меню «Каталог»</h2>
-                  <ul class="popup-menu-list">
+                  <ul class="popup-menu-list list-style">
                     <li class="popup-menu-item new-menu">
-                      <a href="#"><b>Новинки</b></a>
+                      <a href="#">Новинки</a>
                     </li>
                     <li class="popup-menu-item">
                       <a>Сливочное</a>
@@ -52,7 +52,7 @@
                 </a>
               </li>
             </ul>
-            <ul class="user-nav flex">
+            <ul class="user-nav flex list-style">
               <li class="user-nav-item search">
                 <a class="header-search" href="search.html">
                   <span class="visually-hidden">Поиск</span>
@@ -128,16 +128,12 @@
             <span class="mode">С 10 до 20, ежедневно</span>
             <a class="phone">8 812 450-25-25</a>
           </p>
-          <ul class="breadcrumbs flex">
+          <ul class="breadcrumbs flex list-style">
             <li>
-              <a href="index.html">
-                <span class="underline">Главная</span>
-              </a>
+              <a class="underline" href="index.html">Главная</a>
             </li>
             <li>
-              <a href="#">
-                <span class="underline">Каталог</span>
-              </a>
+              <a class="underline" href="#">Каталог</a>
             </li>
             <li class="breadcrumbs-current">Сливочное</li>
           </ul>
@@ -149,7 +145,7 @@
 
         <section class="filtres">
           <h2 class="visually-hidden">Фильтры товаров</h2>
-          <form class="filtres-form" action="https://echo.htmlacademy.ru" method="get" oninput="priceFirst.value=filterPriceFirst.value, priceSecond.value=filterPriceSecond.value">
+          <form class="filtres-form" action="https://echo.htmlacademy.ru" method="get">
             <div class="filters-wrapper flex">
               <p class="filter-sorting">
                 <label for="filter-sorting-field">Сортировка:</label>
@@ -175,7 +171,7 @@
               </div>
               <fieldset class="filter-fat-content">
                 <legend>Жирность:</legend>
-                <ul class="filter-fat-content-list flex">
+                <ul class="filter-fat-content-list flex list-style">
                   <li class="filter-option">
                     <label>
                       <input class="visually-hidden" type="radio" value="0%" name="fat-content">
@@ -210,7 +206,7 @@
             <div class="filters-wrapper flex">
               <fieldset class="filter-fillers">
                 <legend>Наполнители:</legend>
-                <ul class="filter-fillers-list flex">
+                <ul class="filter-fillers-list flex list-style">
                   <li class="filter-option">
                     <label>
                       <input class="visually-hidden" type="checkbox" name="fillers" value="chocolate" checked>
@@ -255,7 +251,7 @@
 
         <section class="catalog">
           <h2 class="visually-hidden">Каталог сливочного мороженого</h2>
-          <ul class="catalog-list flex">
+          <ul class="catalog-list flex list-style">
             <li class="catalog-list-item">
               <a class="flex" href="#">
                 <h3>
@@ -264,9 +260,7 @@
                 <div class="price-wrapper">
                   <img src="img/product-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                   <p class="item-price">
-                    <strong>
-                      310<span class="item-weight">/кг</span>
-                    </strong>
+                    <strong>310<span class="item-weight">/кг</span></strong>
                   </p>
                 </div>
               </a>
@@ -282,9 +276,7 @@
                 <div class="price-wrapper">
                   <img src="img/product-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
                   <p class="item-price">
-                    <strong>
-                      380<span class="item-weight">/кг</span>
-                    </strong>
+                    <strong>380<span class="item-weight">/кг</span></strong>
                   </p>
                 </div>
               </a>
@@ -300,9 +292,7 @@
                 <div class="price-wrapper">
                   <img src="img/product-3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
                   <p class="item-price">
-                    <strong>
-                      355<span class="item-weight">/кг</span>
-                    </strong>
+                    <strong>355<span class="item-weight">/кг</span></strong>
                   </p>
                 </div>
               </a>
@@ -318,9 +308,7 @@
                 <div class="price-wrapper">
                   <img src="img/product-4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
                   <p class="item-price">
-                    <strong>
-                      415<span class="item-weight">/кг</span>
-                    </strong>
+                    <strong>415<span class="item-weight">/кг</span></strong>
                   </p>
                 </div>
               </a>
@@ -336,9 +324,7 @@
                 <div class="price-wrapper">
                   <img src="img/product-5.jpg" width="267" height="267" alt="Сливочное с брусничным джемом">
                   <p class="item-price">
-                    <strong>
-                      325<span class="item-weight">/кг</span>
-                    </strong>
+                    <strong>325<span class="item-weight">/кг</span></strong>
                   </p>
                 </div>
               </a>
@@ -354,9 +340,7 @@
                 <div class="price-wrapper">
                   <img src="img/product-6.jpg" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники">
                   <p class="item-price">
-                    <strong>
-                      410<span class="item-weight">/кг</span>
-                    </strong>
+                    <strong>410<span class="item-weight">/кг</span></strong>
                   </p>
                 </div>
               </a>
@@ -372,9 +356,7 @@
                 <div class="price-wrapper">
                   <img src="img/product-7.jpg" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой">
                   <p class="item-price">
-                    <strong>
-                      375<span class="item-weight">/кг</span>
-                    </strong>
+                    <strong>375<span class="item-weight">/кг</span></strong>
                   </p>
                 </div>
               </a>
@@ -390,9 +372,7 @@
                 <div class="price-wrapper">
                   <img src="img/product-8.jpg" width="267" height="267" alt="Сливочное с шоколадной стружкой">
                   <p class="item-price">
-                    <strong>
-                      320<span class="item-weight">/кг</span>
-                    </strong>
+                    <strong>320<span class="item-weight">/кг</span></strong>
                   </p>
                 </div>
               </a>
@@ -408,9 +388,7 @@
                 <div class="price-wrapper">
                   <img src="img/product-9.jpg" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
                   <p class="item-price">
-                    <strong>
-                      440<span class="item-weight">/кг</span>
-                    </strong>
+                    <strong>440<span class="item-weight">/кг</span></strong>
                   </p>
                 </div>
               </a>
@@ -426,9 +404,7 @@
                 <div class="price-wrapper">
                   <img src="img/product-10.jpg" width="267" height="267" alt="Сливочноe с ментоловым сиропом">
                   <p class="item-price">
-                    <strong>
-                      435<span class="item-weight">/кг</span>
-                    </strong>
+                    <strong>435<span class="item-weight">/кг</span></strong>
                   </p>
                 </div>
               </a>
@@ -444,9 +420,7 @@
                 <div class="price-wrapper">
                   <img src="img/product-11.jpg" width="267" height="267" alt="Сливочное с кусочками черного шоколада">
                   <p class="item-price">
-                    <strong>
-                      355<span class="item-weight">/кг</span>
-                    </strong>
+                    <strong>355<span class="item-weight">/кг</span></strong>
                   </p>
                 </div>
               </a>
@@ -462,9 +436,7 @@
                 <div class="price-wrapper">
                   <img src="img/product-12.jpg" width="267" height="267" alt="Сливочное с мятным сиропом">
                   <p class="item-price">
-                    <strong>
-                      420<span class="item-weight">/кг</span>
-                    </strong>
+                    <strong>420<span class="item-weight">/кг</span></strong>
                   </p>
                 </div>
               </a>
@@ -475,7 +447,7 @@
           </ul>
         </section>
 
-        <ul class="pagination-list flex">
+        <ul class="pagination-list flex list-style">
           <li class="prev disabled">
             <a>Назад</a>
           </li>
@@ -499,14 +471,12 @@
           </li>
         </ul>
 
-        <div class="line-wrapper">
-            <span class="line"></span>
-        </div>
+        <div class="line-wrapper"></div>
       </main>
 
       <footer class="container main-footer flex">
         <div class="footer-social">
-          <ul class="social-btn flex">
+          <ul class="social-btn flex list-style">
             <li>
               <a class="social" href="#">
                 <span class="visually-hidden">Twitter</span>
@@ -535,26 +505,18 @@
         </div>
 
         <div class="footer-nav">
-          <ul class="footer-nav-list flex">
+          <ul class="footer-nav-list flex list-style">
             <li>
-              <a href="#">
-                <span class="heart underline">Для поставщиков</span>
-              </a>
+              <a class="heart underline" href="#">Для поставщиков</a>
             </li>
             <li>
-              <a href="#">
-                <span class="underline">Наши документы</span>
-              </a>
+              <a class="underline" href="#">Наши документы</a>
             </li>
             <li>
-              <a href="#">
-                <span class="underline">О производстве</span>
-              </a>
+              <a class="underline" href="#">О производстве</a>
             </li>
             <li>
-              <a href="#">
-                <span class="underline">Экологические стандарты</span>
-              </a>
+              <a class="underline" href="#">Экологические стандарты</a>
             </li>
           </ul>
         </div>
