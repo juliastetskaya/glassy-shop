@@ -122,28 +122,55 @@ input[type="radio"].visually-hidden {
 
 /* ---Стили для placeholder--- */
 
-input::placeholder,
-textarea::placeholder {
+.subscribe-form input::placeholder,
+.search-form input::placeholder,
+.login-form input::placeholder {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   color: #999999;
 }
 
-input::-ms-input-placeholder,
-textarea::-ms-input-placeholder {
+.subscribe-form input::-ms-input-placeholder,
+.search-form input::-ms-input-placeholder,
+.login-form input::-ms-input-placeholder {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   color: #999999;
 }
 
-input:-ms-input-placeholder,
-textarea:-ms-input-placeholder {
+.subscribe-form input:-ms-input-placeholder,
+.search-form input:-ms-input-placeholder,
+.login-form input:-ms-input-placeholder {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   color: #999999;
+}
+
+.feedback-form input::placeholder,
+.feedback-form textarea::placeholder {
+  font-weight: 400;
+  line-height: 24px;
+  color: #999999;
+  font-size: 16px;
+}
+
+.feedback-form input::-ms-input-placeholder,
+.feedback-form textarea::-ms-input-placeholder {
+  font-weight: 400;
+  line-height: 24px;
+  color: #999999;
+  font-size: 16px;
+}
+
+.feedback-form input:-ms-input-placeholder,
+.feedback-form textarea:-ms-input-placeholder {
+  font-weight: 400;
+  line-height: 24px;
+  color: #999999;
+  font-size: 16px;
 }
 
 .subscribe-form input:focus::placeholder,
@@ -168,21 +195,6 @@ textarea:-ms-input-placeholder {
 .feedback-form input:focus:-ms-input-placeholder,
 .feedback-form textarea:focus:-ms-input-placeholder {
   color: transparent;
-}
-
-.feedback-form input::placeholder,
-.feedback-form textarea::placeholder {
-  font-size: 16px;
-}
-
-.feedback-form input::-ms-input-placeholder,
-.feedback-form textarea::-ms-input-placeholder {
-  font-size: 16px;
-}
-
-.feedback-form input:-ms-input-placeholder,
-.feedback-form textarea:-ms-input-placeholder {
-  font-size: 16px;
 }
 
 
@@ -1203,7 +1215,8 @@ input[class="radio-3"] {
   opacity: 0.8;
 }
 
-.social:hover {
+.social:hover,
+.social:focus {
   opacity: 1;
 }
 
