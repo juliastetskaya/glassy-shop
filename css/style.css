@@ -152,25 +152,25 @@ input[type="radio"].visually-hidden {
 .feedback-form input::placeholder,
 .feedback-form textarea::placeholder {
   font-weight: 400;
+  font-size: 16px;
   line-height: 24px;
   color: #999999;
-  font-size: 16px;
 }
 
 .feedback-form input::-ms-input-placeholder,
 .feedback-form textarea::-ms-input-placeholder {
   font-weight: 400;
+  font-size: 16px;
   line-height: 24px;
   color: #999999;
-  font-size: 16px;
 }
 
 .feedback-form input:-ms-input-placeholder,
 .feedback-form textarea:-ms-input-placeholder {
   font-weight: 400;
+  font-size: 16px;
   line-height: 24px;
   color: #999999;
-  font-size: 16px;
 }
 
 .subscribe-form input:focus::placeholder,
@@ -1183,9 +1183,10 @@ input[class="radio-3"] {
 }
 
 .address-info .button {
+  align-self: center;
   margin: 0 auto;
   margin-bottom: 3px;
-  padding: 11px 26px;
+  padding: 11px 27px;
 }
 
 
