@@ -122,7 +122,6 @@ input[type="radio"].visually-hidden {
 
 /* ---Стили для placeholder--- */
 
-.subscribe-form input::placeholder,
 .search-form input::placeholder,
 .login-form input::placeholder {
   font-weight: 400;
@@ -131,7 +130,6 @@ input[type="radio"].visually-hidden {
   color: #999999;
 }
 
-.subscribe-form input::-ms-input-placeholder,
 .search-form input::-ms-input-placeholder,
 .login-form input::-ms-input-placeholder {
   font-weight: 400;
@@ -140,7 +138,6 @@ input[type="radio"].visually-hidden {
   color: #999999;
 }
 
-.subscribe-form input:-ms-input-placeholder,
 .search-form input:-ms-input-placeholder,
 .login-form input:-ms-input-placeholder {
   font-weight: 400;
@@ -149,6 +146,7 @@ input[type="radio"].visually-hidden {
   color: #999999;
 }
 
+.subscribe-form input::placeholder,
 .feedback-form input::placeholder,
 .feedback-form textarea::placeholder {
   font-weight: 400;
@@ -157,6 +155,7 @@ input[type="radio"].visually-hidden {
   color: #999999;
 }
 
+.subscribe-form input::-ms-input-placeholder,
 .feedback-form input::-ms-input-placeholder,
 .feedback-form textarea::-ms-input-placeholder {
   font-weight: 400;
@@ -165,6 +164,7 @@ input[type="radio"].visually-hidden {
   color: #999999;
 }
 
+.subscribe-form input:-ms-input-placeholder,
 .feedback-form input:-ms-input-placeholder,
 .feedback-form textarea:-ms-input-placeholder {
   font-weight: 400;
@@ -1041,7 +1041,7 @@ input[class="radio-3"] {
   justify-content: space-between;
   width: calc(50% - 1.13%);
   min-height: 220px;
-  padding: 35px 27px 39px 27px;
+  padding: 34px 26px 39px;
 
   background-color: #f8f7f4;
   background-image: url("../img/bg-light.png"),
@@ -1069,7 +1069,7 @@ input[class="radio-3"] {
 }
 
 .subscribe .button {
-  padding: 9px 18px 13px 18px;
+  padding: 9px 18px 12px 18px;
 
   color: #ffffff;
 
@@ -1082,7 +1082,7 @@ input[class="radio-3"] {
 
 .subscribe-form input {
   width: 368px;
-  margin-right: 8px;
+  margin-right: 12px;
   padding: 9px 12px;
 
   font: inherit;
