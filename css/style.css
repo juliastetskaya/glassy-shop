@@ -763,7 +763,7 @@ input[class="radio-3"] {
 /* ---Стили для блока "Хиты продаж"--- */
 
 .hits {
-  margin-bottom: 38px;
+  margin-bottom: 22px;
 }
 
 .hits-list {
@@ -780,7 +780,8 @@ input[class="radio-3"] {
 .hits-item h3 {
   z-index: 8;
 
-  margin: 0;
+  margin-top: 8px;
+  padding: 0 5.5px;
 
   font-weight: 500;
   font-size: 16px;
@@ -800,8 +801,6 @@ input[class="radio-3"] {
 .price-wrapper {
   position: relative;
   z-index: 2;
-
-  margin-bottom: 7px;
 }
 
 .hits-item h3:hover,
@@ -816,12 +815,13 @@ h3:focus .underline {
 
 .hits-item-price {
   position: absolute;
-  bottom: 25px;
+  bottom: 14px;
   left: 0;
 
   margin: 0;
 
   font-size: 45px;
+  line-height: 45px;
   text-shadow: 0 1px 3px rgba(49, 50, 53, 0.5);
 }
 
@@ -907,15 +907,13 @@ h3:focus .underline {
 .catalog-list-item:hover .button-wrapper,
 .catalog-list-item:focus-within .button-wrapper {
   opacity: 1;
+  z-index: 7;
 }
 
 .catalog-list-item:hover .price-wrapper,
 .catalog-list-item:focus-within .price-wrapper,
 .hits-item:hover .price-wrapper,
-.hits-item:focus-within .price-wrapper {
-  z-index: 7;
-}
-
+.hits-item:focus-within .price-wrapper,
 .hits-item:hover::after,
 .hits-item:focus-within::after {
   z-index: 8;
@@ -925,7 +923,7 @@ h3:focus .underline {
 /* ---Стили для блока "Преимущества компании"--- */
 
 .advantages {
-  margin-bottom: 41px;
+  margin-bottom: 40px;
   padding: 24px 19px;
 
   background-color: #e9dcbe;
@@ -1041,10 +1039,9 @@ h3:focus .underline {
   background-image: linear-gradient(transparent 85%, #323232 85%, #323232 92%, transparent 92%);
 }
 
-.blog-underline:hover,
-.blog-underline:focus {
+.blog a:hover .blog-underline,
+.blog a:focus .blog-underline {
   color: #e84d37;
-
   background-image: linear-gradient(transparent 85%, #e84d37 85%, #e84d37 92%, transparent 92%);
 }
 
@@ -1282,7 +1279,7 @@ h3:focus .underline {
 
 .footer-nav-list li {
   width: 142px;
-  padding-bottom: 5px;
+  margin-bottom: 5px;
 
   font-weight: 400;
   font-size: 13px;
@@ -1321,7 +1318,7 @@ h3:focus .underline {
 
 .footer-copyright {
   width: calc(23.3% - 1.5%);
-  margin-top: -5px;
+  margin-top: -4px;
 
   text-align: right;
 }
@@ -2023,13 +2020,13 @@ input[type="checkbox"]:checked:hover:disabled + .checkbox-indicator::after {
   position: relative;
 
   width: calc(25% - 1.7%);
-  margin-bottom: 38px;
+  margin-bottom: 35px;
 }
 
 .catalog-list-item h3 {
   z-index: 8;
 
-  margin: 0;
+  margin: 2.9% 0 1% 0;
   padding: 0 5.5px;
 
   font-weight: 500;
@@ -2049,12 +2046,13 @@ input[type="checkbox"]:checked:hover:disabled + .checkbox-indicator::after {
 
 .item-price {
   position: absolute;
-  bottom: 25px;
+  bottom: 16px;
   left: 0;
 
   margin: 0;
 
   font-size: 45px;
+  line-height: 45px;
   text-shadow: 0 1px 3px rgba(49, 50, 53, 0.5);
 }
 
@@ -2071,6 +2069,7 @@ input[type="checkbox"]:checked:hover:disabled + .checkbox-indicator::after {
 .pagination-list {
   justify-content: flex-end;
   margin-right: -9px;
+  margin-bottom: 31px;
 }
 
 .pagination-list a {
@@ -2149,7 +2148,7 @@ input[type="checkbox"]:checked:hover:disabled + .checkbox-indicator::after {
 .line-wrapper::after {
   content: "";
   position: absolute;
-  top: 30px;
+  top: 0;
   left: 0;
 
   width: 100%;
@@ -2157,10 +2156,6 @@ input[type="checkbox"]:checked:hover:disabled + .checkbox-indicator::after {
 
   background-color: #ffffff;
   opacity: 0.3;
-}
-
-.inner-page .main-footer {
-  margin-top: 55px;
 }
 
 
