@@ -780,6 +780,7 @@ input[class="radio-3"] {
 .hits-item h3 {
   z-index: 8;
 
+  margin: 0;
   margin-top: 8px;
   padding: 0 5.5px;
 
@@ -903,21 +904,28 @@ h3:focus .underline {
 }
 
 .hits-item:hover .button-wrapper,
+.catalog-list-item:hover .button-wrapper {
+  opacity: 1;
+  z-index: 7;
+}
+
 .hits-item:focus-within .button-wrapper,
-.catalog-list-item:hover .button-wrapper,
 .catalog-list-item:focus-within .button-wrapper {
   opacity: 1;
+  z-index: 7;
 }
 
 .catalog-list-item:hover .price-wrapper,
-.catalog-list-item:focus-within .price-wrapper,
 .hits-item:hover .price-wrapper,
-.hits-item:focus-within .price-wrapper,
-.hits-item:hover::after,
-.hits-item:focus-within::after {
+.hits-item:hover::after {
   z-index: 8;
 }
 
+.catalog-list-item:focus-within .price-wrapper,
+.hits-item:focus-within .price-wrapper,
+.hits-item:focus-within::after {
+  z-index: 8;
+}
 
 /* ---Стили для блока "Преимущества компании"--- */
 
