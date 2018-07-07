@@ -907,7 +907,6 @@ h3:focus .underline {
 .catalog-list-item:hover .button-wrapper,
 .catalog-list-item:focus-within .button-wrapper {
   opacity: 1;
-  z-index: 7;
 }
 
 .catalog-list-item:hover .price-wrapper,
