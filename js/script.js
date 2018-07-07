@@ -41,7 +41,7 @@ overlay.addEventListener('click', function(evt) {
   popup.classList.remove('popup-show');
   popup.classList.remove('popup-error');
   overlay.classList.remove('show-overlay');
-})
+});
 
 form.addEventListener('submit', function(evt) {
   if (!nameField.value || !emailField.value || !textField.value) {
@@ -65,4 +65,4 @@ window.addEventListener('keydown', function(evt) {
       overlay.classList.remove('show-overlay');
     }
   }
-})
+});
